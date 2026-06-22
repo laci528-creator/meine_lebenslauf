@@ -354,7 +354,7 @@
         }
 
         .project-card {
-            
+
             transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
         }
         .clickable {
@@ -486,12 +486,7 @@
                 border-color: rgba(56, 189, 248, 0.6);
                 box-shadow: 0 22px 48px rgba(56, 189, 248, 0.18);
             }
-
-
     </style>
-
-
-
 </head>
 
 <body>
@@ -533,7 +528,7 @@
                 <div class="hero-visual">
                     <div class="profile-card">
                         <div class="profile-image-wrapper">
-                            <img src="images/PXL_20260330_103448295.jpg" alt="Profilbild von László Haraszti"
+                            <img src="images/PXL_20260330_103448295.png" alt="Profilbild von László Haraszti"
                                 class="profile-image">
                         </div>
                         <h3>Laszlo Haraszti</h3>
@@ -648,7 +643,7 @@
                             <a class="btn btn-primary" href="documente/Frontend_Web_Developer_LH.pdf" download>Frontend
                                 Web Developer</a>
                             <a class="btn btn-primary" href="documente/Web_Programmierung_LH.pdf"
-                                download>Web_Programmierung</a>
+                                download>Web Programmierung</a>
                             <a class="btn btn-secondary" href="documente/Full Stack Web developer_LH.pdf" download>Full
                                 Stack Web Developer</a>
                         </div>
@@ -725,7 +720,7 @@
         <section id="portfolio" class="project-detail-section">
             <div class="container">
                 <div class="section-title">
-                    <span>projekte</span>
+                    <span>Projekte</span>
                     <h2>Portfolio-Webseite</h2>
                 </div>
                 <div class="card about-card">
@@ -762,9 +757,10 @@
                         <p>Ziel dieses Projekts ist es, ein übersichtliches und professionelles Online-Portfolio bereitzustellen, das für die persönliche Präsentation und für Bewerbungen genutzt werden kann.</p>
                     <h4>Github</h4>
                         <p><a href="https://github.com/laci528-creator/meine_lebenslauf"
-                            target="_blank">Zur GitHub-Projektseite</a></p>
-                        <p>Live website: <a href="https://laci528-creator.github.io/meine_lebenslauf/"
-                            target="_blank">Live Demo</a></p>
+                            target="_blank" class="btn btn-primary">Zur GitHub-Projektseite</a></p>
+                        <p>Live website:</p>
+                        <p> <a href="https://laci528-creator.github.io/meine_lebenslauf/"
+                            target="_blank" class="btn btn-primary">Live Demo</a></p>
                 </div>
             </div>
         </section>
@@ -773,7 +769,7 @@
         <section id="bildkonverter" class="project-detail-section">
             <div class="container">
                 <div class="section-title">
-                    <span>projekte</span>
+                    <span>Projekte</span>
                     <h2>Bildkonverter</h2>
                 </div>
                 <div class="card about-card">
@@ -804,14 +800,14 @@
                         <p>hochgeladene Dateien werden in temporären Batch-Ordnern gespeichert die ZIP-Datei und die zugehörigen Bilder werden nach dem Download gelöscht Dateien mit gleichem Namen innerhalb desselben Batchs können einander überschreiben</p>
                     <h4>Github</h4>
                         <p><a href="https://github.com/laci528-creator/PHP-Multi_Image-Converter"
-                            target="_blank">Zur GitHub-Projektseite</a></p>
+                            target="_blank" class="btn btn-primary">Zur GitHub-Projektseite</a></p>
                 </div>
             </div>
         </section>
-            <section id="firmenwebsite" class="project-detail-section">
+        <section id="firmenwebsite" class="project-detail-section">
             <div class="container">
                 <div class="section-title">
-                    <span>projekte</span>
+                    <span>Projekte</span>
                     <h2>Responsive Firmenwebsite</h2>
                 </div>
                 <div class="card about-card">
@@ -840,9 +836,9 @@
                         <p>Dieses Projekt wurde zu Lernzwecken erstellt, daher enthalten einige Inhaltselemente Platzhaltertexte.</p>
                     <h4>Github</h4>
                         <p><a href="https://github.com/laci528-creator/Frontend_projektarbeit"
-                            target="_blank">Zur GitHub-Projektseite</a></p>
+                            target="_blank" class="btn btn-primary">Zur GitHub-Projektseite</a></p>
                         <p>Live website: <a href="https://laci528-creator.github.io/Frontend_projektarbeit/"
-                            target="_blank">Live Demo</a></p>
+                            target="_blank" class="btn btn-primary">Live Demo</a></p>
                 </div>
             </div>
         </section>
@@ -870,48 +866,47 @@
             <p>&copy; 2026 Laszlo Haraszti. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
-    
-<script>
-    const detailButtons = document.querySelectorAll(".toggle-button[data-project]");
-    const detailSections = document.querySelectorAll(".project-detail-section");
-    const projectCards = document.querySelectorAll(".project-card");
+        <script>
+            const detailButtons = document.querySelectorAll(".toggle-button[data-project]");
+            const detailSections = document.querySelectorAll(".project-detail-section");
+            const projectCards = document.querySelectorAll(".project-card");
 
-    detailButtons.forEach(function(button) {
-        button.addEventListener("click", function(event) {
-            event.stopPropagation();
+            detailButtons.forEach(function(button) {
+                button.addEventListener("click", function(event) {
+                    event.stopPropagation();
 
-            const targetId = button.dataset.project;
-            const targetSection = document.getElementById(targetId);
+                    const targetId = button.dataset.project;
+                    const targetSection = document.getElementById(targetId);
 
-            const isAlreadyOpen = targetSection.classList.contains("open");
+                    const isAlreadyOpen = targetSection.classList.contains("open");
 
-            // alle section-Elemente schließen
-            detailSections.forEach(function(section) {
-                section.classList.remove("open");
+                    // alle section-Elemente schließen
+                    detailSections.forEach(function(section) {
+                        section.classList.remove("open");
+                    });
+
+                    // alle project-card-Elemente in den Normalzustand zurückversetzen
+                    projectCards.forEach(function(card) {
+                        card.classList.remove("active");
+                    });
+
+                    // alle Buttons zurücksetzen
+                    detailButtons.forEach(function(btn) {
+                        btn.textContent = "Details";
+                    });
+
+                    // wann targetSection nicht bereits geöffnet ist, öffne es und markiere die zugehörige Karte
+                    if (!isAlreadyOpen) {
+                        targetSection.classList.add("open");
+                        button.textContent = "Schließen";
+
+                        const parentCard = button.closest(".project-card");
+                        if (parentCard) {
+                            parentCard.classList.add("active");
+                        }
+                    }
+                });
             });
-
-            // alle project-card-Elemente in den Normalzustand zurückversetzen
-            projectCards.forEach(function(card) {
-                card.classList.remove("active");
-            });
-
-            // alle Buttons zurücksetzen
-            detailButtons.forEach(function(btn) {
-                btn.textContent = "Details";
-            });
-
-            // wann targetSection nicht bereits geöffnet ist, öffne es und markiere die zugehörige Karte
-            if (!isAlreadyOpen) {
-                targetSection.classList.add("open");
-                button.textContent = "Schließen";
-
-                const parentCard = button.closest(".project-card");
-                if (parentCard) {
-                    parentCard.classList.add("active");
-                }
-            }
-        });
-    });
-</script>
-</body>
+        </script>
+    </body>
 </html>
