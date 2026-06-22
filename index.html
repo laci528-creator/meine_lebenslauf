@@ -291,18 +291,18 @@
         }
 
         .skill-item {
-                    padding: 22px;
-                    border-radius: 18px;
-                    text-align: center;
-                    background: rgba(255, 255, 255, 0.05);
-                    border: 1px solid rgba(255, 255, 255, 0.08);
-                    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 12px;
-                    min-height: 140px;
+            padding: 22px;
+            border-radius: 18px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            min-height: 140px;
         }
 
         .skill-item:hover {
@@ -317,24 +317,24 @@
             font-size: 1rem;
         }
         .skill-icon {
-        width: 44px;
-        height: 44px;
-        object-fit: contain;
-        display: block;
-        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
-        transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
-        opacity: 0.95;
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            display: block;
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+            transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+            opacity: 0.95;
         }
 
         .skill-item:hover .skill-icon {
-        transform: scale(1.12);
-        filter: drop-shadow(0 8px 14px rgba(56, 189, 248, 0.2));
-        opacity: 1;
+            transform: scale(1.12);
+            filter: drop-shadow(0 8px 14px rgba(56, 189, 248, 0.2));
+            opacity: 1;
         }
 
         .skill-label {
-        text-align: center;
-        line-height: 1.3;
+            text-align: center;
+            line-height: 1.3;
         }
 
 
@@ -690,33 +690,33 @@
                         <h3>Portfolio-Webseite</h3>
                         <p>Eine persönliche Webseite zur Präsentation meiner Kenntnisse, Projekte und beruflichen Ziele.
                         </p>
-                        <button class="toggle-button" type="button" data-project="portfolio" >Details</button>
+                        <button class="btn btn-primary toggle-button" type="button" data-project="portfolio" >Details</button>
                     </div>
                     <div class="card project-card">
                         <h3>Bildkonverter</h3>
                         <p>Eine mit PHP GD-Bibliothek erstellte Anwendung zur Umwandlung von Bildern in verschiedene große und Formate.</p>
-                        <button class="toggle-button" type="button" data-project="bildkonverter" >Details</button>
+                        <button class="btn btn-primary toggle-button" type="button" data-project="bildkonverter" >Details</button>
                     </div>
                     <div class="card project-card">
                         <h3>Responsive Firmenwebsite</h3>
                         <p>Eine moderne und mobilfreundliche Webseite mit klarem Aufbau und ansprechendem Design.</p>
-                        <button class="toggle-button" type="button" data-project="firmenwebsite" >Details</button>
+                        <button class="btn btn-primary toggle-button" type="button" data-project="firmenwebsite" >Details</button>
                     </div>
                     <div class="card project-card">
                         <h3>Datemanager</h3> 
                         <p>Von PHP programmiert, zur Verwaltung von Datensätzen in einer MySQL-Datenbank.</p>
-                        <button class="toggle-button" type="button" data-project="datemanager" >Details</button>
+                        <button class="btn btn-primary toggle-button" type="button" data-project="datemanager" >Details</button>
                     </div>
 
                     <div class="card project-card">
                         <h3>Responsive Landingpage</h3>
                         <p>Eine moderne und mobilfreundliche Webseite mit klarem Aufbau und ansprechendem Design.</p>
-                        <button class="toggle-button" type="button" data-project="landingpage" >Details</button>
+                        <button class="btn btn-primary toggle-button" type="button" data-project="landingpage" >Details</button>
                     </div>
                     <div class="card project-card">
                         <h3>Online terminbuchung app</h3>
                         <p>Eine einfache Buchungsanwendung mit PHP und MySQL zur Verwaltung von Datensätzen.</p>
-                        <button class="toggle-button" type="button" data-project="terminbuchung" >Details</button>
+                        <button class="btn btn-primary toggle-button" type="button" data-project="terminbuchung" >Details</button>
                     </div>
                 </div>
             </div>
@@ -808,12 +808,6 @@
                 </div>
             </div>
         </section>
-
-
-
- 
-
-
             <section id="firmenwebsite" class="project-detail-section">
             <div class="container">
                 <div class="section-title">
@@ -876,6 +870,7 @@
             <p>&copy; 2026 Laszlo Haraszti. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
+    
 <script>
     const detailButtons = document.querySelectorAll(".toggle-button[data-project]");
     const detailSections = document.querySelectorAll(".project-detail-section");
@@ -918,8 +913,5 @@
         });
     });
 </script>
-
-
 </body>
-
 </html>
