@@ -6,13 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laszlo Haraszti | Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+
+<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const btn = document.querySelector("nav button.btnNav");
+			const navliste = document.querySelector("nav > ul");
+
+			if (btn && navliste) {
+				btn.addEventListener("click", () => {
+					const isOpen = navliste.classList.toggle("visible");
+
+                    btn.classList.toggle("open", isOpen);
+                    btn.setAttribute("aria-expanded", String(isOpen));
+				});
+			}
+
+			const navelemente = document.querySelectorAll("nav a");
+			navelemente.forEach((element) => {
+				element.addEventListener("click", () => {
+					if (window.innerWidth <= 768 && navliste) {
+						navliste.classList.remove("visible");
+                        btn.classList.remove("open");
+                        btn.setAttribute("aria-expanded", "false");
+					}
+				});
+			});
+        });
+
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
+                
                 <div class="logo">Laszlo Haraszti</div>
+                <button     type="button"
+                    class="btnNav"
+                    aria-label="Menü öffnen"
+                    aria-expanded="false"
+                    aria-controls="main-navigation">
+                    Navigation ein/aus
+                </button>
                 <ul>
                     <li><a href="#about">Über mich</a></li>
                     <li><a href="#skills">Kenntnisse</a></li>
