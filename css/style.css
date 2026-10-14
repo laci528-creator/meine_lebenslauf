@@ -647,3 +647,8 @@
 
         z-index: 2;
         }
+
+.dark-icons {
+    filter: invert(66%) sepia(74%) saturate(758%)
+            hue-rotate(166deg) brightness(102%);
+}
