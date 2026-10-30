@@ -12,13 +12,13 @@
             const btn = document.querySelector("nav button.btnNav");
             const navliste = document.querySelector("nav > ul");
 
-            
-            function closeMenu() {
-                    navliste.classList.remove("visible");
-                    btn.classList.remove("open");
 
-                    btn.setAttribute("aria-expanded", "false");
-                    btn.setAttribute("aria-label", "Menü öffnen");
+            function closeMenu() {
+                navliste.classList.remove("visible");
+                btn.classList.remove("open");
+
+                btn.setAttribute("aria-expanded", "false");
+                btn.setAttribute("aria-label", "Menü öffnen");
 
             }
 
@@ -425,9 +425,9 @@
 
                 <div class="project-modal-content">
                     <p>
-                        Eine Full-Stack-Webanwendung zur Verwaltung von
-                        Rezepten, zur Planung von Mahlzeiten und zur
-                        Erstellung von Einkaufslisten.
+                        Eine Full-Stack-Webanwendung zur Planung von Mahlzeiten, Verwaltung eigener und externer Rezepte
+                        sowie zur automatischen Erstellung von Einkaufslisten. Die Anwendung verfügt über
+                        Benutzerkonten, Wochenplanung, Vorratsverwaltung und persistente benutzerbezogene Daten.
                     </p>
 
                     <h4>Verwendete Technologien</h4>
@@ -442,17 +442,20 @@
 
                     <h4>Bereits entwickelte Funktionen</h4>
                     <ul>
-                        <li>Benutzerregistrierung und Login</li>
-                        <li>Backend mit Datenbankanbindung</li>
-                        <li>Verwaltung von Einkaufslisten</li>
-                        <li>API-Endpunkte und Eingabevalidierung</li>
-                    </ul>
-
-                    <h4>Geplante Funktionen</h4>
-                    <ul>
-                        <li>Erweiterte Rezeptverwaltung</li>
-                        <li>Wöchentliche Essensplanung</li>
-                        <li>Automatische Erstellung von Einkaufslisten</li>
+                        <li>Registrierung, Login, Logout</li>
+                        <li>Session-basierte Authentifizierung</li>
+                        <li>Rezeptsuche über externe API</li>
+                        <li>Eigene Familienrezepte</li>
+                        <li>Rezeptbilder hochladen</li>
+                        <li>Rezepte speichern, bearbeiten, löschen</li>
+                        <li>Cooking Mode</li>
+                        <li>Wochenplan für Frühstück/Mittag-/Abendessen</li>
+                        <li>Automatische Einkaufsliste</li>
+                        <li>Zutaten zusammenfassen</li>
+                        <li>Manuelle Einkaufseinträge</li>
+                        <li>Pantry-Verwaltung</li>
+                        <li>Benutzerbezogene Daten</li>
+                        <li>Responsive Design / Themes</li>
                     </ul>
 
                     <h4>GitHub</h4>
@@ -462,6 +465,9 @@
                             Zur GitHub-Projektseite
                         </a>
                     </p>
+                    <h4>Live-Demo:</h4>
+                    <p><a href="https://family-meal-planner-evy5.onrender.com/" target="_blank" class="btn btn-primary">Zur
+                            Live-Demo</a></p>
                 </div>
             </div>
         </section>
