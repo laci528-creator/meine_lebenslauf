@@ -184,6 +184,13 @@
                         <h3 class="skill-label">JavaScript</h3>
                     </div>
                     <div class="skill-item">
+                        <img
+                            class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                            alt="TypeScript Logo">
+                        <h3 class="skill-label">TypeScript Grundlagen</h3>
+                    </div>
+                    <div class="skill-item">
                         <img class="skill-icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                             alt="React Logo">
@@ -353,6 +360,20 @@
 
                     <div class="card project-card current-project">
                         <span class="project-status">In Entwicklung</span>
+                        <h3>Job Application Tracker</h3>
+                        <p>
+                            Eine React- und TypeScript-Anwendung zur Verwaltung und
+                            Nachverfolgung von Bewerbungen.
+                        </p>
+                        <button
+                            class="btn btn-primary toggle-button"
+                            type="button"
+                            data-project="jobtracker">
+                            Details
+                        </button>
+                    </div>
+
+                    <div class="card project-card current-project">
                         <h3>Family Meal Planner</h3>
                         <p>Eine Full-Stack-Webanwendung zur Verwaltung von Rezepten,
                             zur wöchentlichen Essensplanung und zur Erstellung von
@@ -402,12 +423,70 @@
                         <button class="btn btn-primary toggle-button" type="button"
                             data-project="portfolio">Details</button>
                     </div>
-                    <div class="card project-card">
-                        <h3>Responsive Firmenwebsite</h3>
-                        <p>Eine moderne und mobilfreundliche Webseite mit klarem Aufbau und ansprechendem Design.</p>
-                        <button class="btn btn-primary toggle-button" type="button"
-                            data-project="firmenwebsite">Details</button>
-                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jobtracker" class="project-detail-section">
+            <div class="project-modal">
+                <button
+                    class="detail-close"
+                    type="button"
+                    aria-label="Projekt-Details schließen">
+                    &times;
+                </button>
+
+                <div class="project-modal-title">
+                    <span>Aktuelles Projekt - In Entwicklung</span>
+                    <h2>Job Application Tracker</h2>
+                </div>
+
+                <div class="project-modal-content">
+                    <p>
+                        Eine React- und TypeScript-Anwendung zur Verwaltung und
+                        Nachverfolgung von Bewerbungen. Das Projekt dient gleichzeitig
+                        dazu, meine TypeScript-Kenntnisse in einer praktischen
+                        React-Anwendung weiter zu vertiefen.
+                    </p>
+
+                    <h4>Verwendete Technologien</h4>
+                    <ul>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Vite</li>
+                        <li>HTML5 / CSS3</li>
+                        <li>LocalStorage</li>
+                    </ul>
+
+                    <h4>Bereits entwickelte Funktionen</h4>
+                    <ul>
+                        <li>Bewerbungen hinzufügen</li>
+                        <li>Bewerbungsstatus ändern</li>
+                        <li>Bewerbungen löschen</li>
+                        <li>Filterung nach Bewerbungsstatus</li>
+                        <li>Statusübersicht und Zähler</li>
+                        <li>Persistente Speicherung mit LocalStorage</li>
+                        <li>TypeScript Interfaces und Type Guards</li>
+                        <li>React State Management</li>
+                    </ul>
+
+                    <h4>Ziel des Projekts</h4>
+                    <p>
+                        Ziel des Projekts ist es, meine Kenntnisse in TypeScript
+                        praktisch mit React anzuwenden und insbesondere typisierte
+                        Komponenten, Formulare, Events und State-Updates zu üben.
+                    </p>
+
+                    <h4>GitHub</h4>
+                    <p>
+                        <a
+                            href="https://github.com/laci528-creator/job-application-tracker-ts"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            Zur GitHub-Projektseite
+                        </a>
+                    </p>
                 </div>
             </div>
         </section>
@@ -419,7 +498,7 @@
                 </button>
 
                 <div class="project-modal-title">
-                    <span>Aktuelles Projekt – In Entwicklung</span>
+                    <span>Full-Stack-Projekt</span>
                     <h2>Family Meal Planner</h2>
                 </div>
 
@@ -631,51 +710,7 @@
                 </div>
             </div>
         </section>
-        <section id="firmenwebsite" class="project-detail-section">
-            <div class="project-modal">
-                <button class="detail-close" type="button" aria-label="Projekt-Details schließen">
-                    &times;
-                </button>
-                <div class="project-modal-title">
-                    <span>Projekte</span>
-                    <h2>Responsive Firmenwebsite</h2>
-                </div>
-                <div class="project-modal-content">
-                    <h3>ArchaeoSchild - Frontend-Übungsprojekt</h3>
-                    <p>Dieses Repository enthält eine statische Unternehmenswebsite, die ich als Frontend-Übungsprojekt
-                        mit HTML, CSS, JavaScript und jQuery erstellt habe. </p>
-                    <h4>Verwendete Technologien</h4><br>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                    </ul>
-                    <br>
-                    <h4>Funktionen</h4><br>
-                    <ul>
-                        <li>responsives Navigationsmenü</li>
-                        <li>Bildergalerie</li>
-                        <li>strukturierte Inhaltsbereiche</li>
-                        <li>Referenztabelle</li>
-                        <li>ausklappbares Bewerbungsformular</li>
-                        <li>Kontaktbereich mit Social-Media-Links</li>
-                    </ul><br>
-                    <h4>Ziel des Projekts</h4>
-                    <p> Ziel dieses Projekts war es, die Grundlagen der Frontend-Entwicklung zu üben, insbesondere
-                        Seitenstruktur, Styling, Navigation und einfache interaktive Elemente.</p>
-                    <h4>Hinweis</h4>
-                    <p>Dieses Projekt wurde zu Lernzwecken erstellt, daher enthalten einige Inhaltselemente
-                        Platzhaltertexte.</p>
-                    <h4>GitHub</h4>
-                    <p><a href="https://github.com/laci528-creator/Frontend_projektarbeit" target="_blank"
-                            class="btn btn-primary">Zur GitHub-Projektseite</a></p>
-                    <h4>Live-Demo:</h4>
-                    <p><a href="https://laci528-creator.github.io/Frontend_projektarbeit/" target="_blank"
-                            class="btn btn-primary">Zur Live-Demo</a></p>
-                </div>
-            </div>
-        </section>
+        
         <section id="terminbuchung" class="project-detail-section">
             <div class="project-modal">
                 <button class="detail-close" type="button" aria-label="Projekt-Details schließen">
